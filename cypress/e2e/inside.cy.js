@@ -1,8 +1,8 @@
 describe('template spec', () => {
 
   beforeEach(()=>{
-    cy.login("standard_user","secret_sauce")
-    cy.visit("https://www.saucedemo.com/inventory.html",{failOnStatusCode: false})
+    cy.login("standard")
+    cy.visit("/inventory.html",{failOnStatusCode: false})
   })
   
   it('passes', () => {
